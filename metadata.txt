@@ -1,0 +1,23 @@
+[general]
+name=RoofSun
+qgisMinimumVersion=3.38
+description=Évaluation du potentiel solaire des toitures pour le photovoltaïque.
+version=0.3
+author=Armand Lecoq
+email=lecoqarmand@gmail.com
+
+about=Le plugin classe les toitures d'une commune, d'un arrondissement ou d'un IRIS en cinq niveaux de potentiel solaire (très élevé à très faible), à partir de l'irradiance (raster GTI du Global Solar Atlas), de l'orientation et de l'inclinaison approchée des bâtiments. Données : BD TOPO (IGN, WFS de la Géoplateforme), contours IRIS (IGN) et découpages administratifs (API Géo). Prérequis : une connexion internet et un raster GTI chargé dans le projet.
+
+tracker=https://github.com/labcoqarm/roofsun/issues
+repository=https://github.com/labcoqarm/roofsun
+homepage=https://github.com/labcoqarm/roofsun
+
+hasProcessingProvider=no
+changelog=0.3 : mise à jour pour QGIS 3.42 (types QMetaType, Qgis.ProcessingSourceType, énumérations Qt qualifiées). 0.2 : filtre sur la nature des bâtiments rendu effectif, score d'orientation corrigé, classe « Moyen » complétée, pagination du WFS bâtiments, choix « Toute la commune ».
+
+tags=python,solaire,photovoltaïque,toiture,bd topo
+category=Vector
+icon=icon.png
+experimental=True
+deprecated=False
+server=False
