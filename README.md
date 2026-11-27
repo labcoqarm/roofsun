@@ -18,7 +18,7 @@ Le modèle Processing (`ModeleRoofSun.py`) enchaîne les étapes suivantes.
 2. Il ne retient que deux natures BD TOPO : « Indifférenciée » et « Industriel, agricole ou commercial ».
 3. Il calcule une inclinaison approchée, `atan((Z_MAX_TOIT - Z_MIN_TOIT) / √surface)`, et écarte les toits au-delà de 45°.
 4. Il estime la surface disponible à 70 % de l'emprise et écarte celles sous 1,7 m² (la taille d'un panneau).
-5. Il calcule la compacité, `périmètre / (2·√(π·surface))`, et écarte les formes trop découpées (au-delà de 1,4).
+5. Il calcule la compacité, `périmètre / (2 × √(π × surface))`, et écarte les formes trop découpées (au-delà de 1,4).
 6. Il note l'orientation avec `|sin(main_angle)|` : 1 quand l'axe long du bâtiment est est-ouest (un pan regarde le sud), 0 quand il est nord-sud.
 7. Il affecte à chaque bâtiment la moyenne du GTI. Quand le bâtiment est plus petit qu'un pixel, QGIS pondère par la surface d'intersection.
 8. Il classe :
